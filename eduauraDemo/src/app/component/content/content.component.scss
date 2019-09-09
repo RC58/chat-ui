@@ -1,0 +1,29 @@
+section {
+    min-height: 550px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin: 15px;
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+img:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    cursor: pointer;
+    filter: grayscale(0%);
+}

@@ -1,0 +1,31 @@
+.navbar {
+  border-radius: 30px;
+}
+
+.navbar-brand {
+  margin-left: 15px;
+  color: #ffffff !important;
+}
+
+.collapse {
+    margin-right: 15px;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-item > a {
+  cursor: pointer;
+  transition: text-decoration 1s ease;
+}
+
+.nav-item > a:hover {
+  transition: text-decoration 1s ease;
+  color: #F2AA4C !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
