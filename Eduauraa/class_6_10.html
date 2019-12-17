@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eduauraa: A Premier Digital Learning Platform</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/manifest.json">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="fixed-top header">
+        <!-- top header -->
+        <!-- navbar -->
+        <div class="navigation w-100">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse"
+                        data-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav ml-auto text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+
+                            <li class="nav-item dropdown view">
+                                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    ABOUT US
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="about.html">About Eduauraa</a>
+                                    <a class="dropdown-item" href="managment.html">Managment Team</a>
+                                    <a class="dropdown-item" href="teacher.html">Teacher's</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown view active">
+                                <a class="nav-link dropdown-toggle" href="subjects.html" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    COURSES
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="class_6_10.html" id="grade6to10"
+                                        onclick="changeGrade(document.getElementById('grade6to10').id)">Class 6 to
+                                        10</a>
+                                    <a class="dropdown-item" href="class_11_12.html" id="grade6to10"
+                                        onclick="changeGrade(document.getElementById('grade6to10').id)">Class 11 to
+                                        12</a>
+                                    <!-- <a class="dropdown-item" href="subjects.html" id="grade6"
+                                        onclick="changeGrade(document.getElementById('grade6').id)">Class 6</a>
+                                    <a class="dropdown-item" href="subjects.html" id="grade7"
+                                        onclick="changeGrade(document.getElementById('grade7').id)">Class 7</a>
+                                    <a class="dropdown-item" href="subjects.html" id="grade8"
+                                        onclick="changeGrade(document.getElementById('grade8').id)">Class 8</a>
+                                    <a class="dropdown-item" href="subjects.html" id="grade9"
+                                        onclick="changeGrade(document.getElementById('grade9').id)">Class 9</a>
+                                    <a class="dropdown-item" href="subjects.html" id="grade10"
+                                        onclick="changeGrade(document.getElementById('grade10').id)">Class 10</a> -->
+                                    <a class="dropdown-item" href="competitive.html">Competitive Exams</a>
+                                    <a class="dropdown-item" href="spoken-english.html">Spoken English</a>
+                                </div>
+                            </li>
+
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="features.html">FEATURES</a>
+                            </li> -->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="teach-with-us.html">TEACH WITH US</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQ'S</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content rounded-0 border-0 p-4">
+                <div class="modal-header border-0">
+                    <h3 id="form-data-title">Register</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="login">
+                        <form method="POST" name="registerForm" novalidate id="form-data">
+                            <div class="col-12">
+                                <input type="text" class="form-control mb-3" id="fname" name="fname"
+                                    placeholder="First Name" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control mb-3" id="lname" name="lname"
+                                    placeholder="Last Name" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" class="form-control mb-3" id="email" name="email"
+                                    placeholder="Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control mb-3" id="phone" name="phone" placeholder="Phone"
+                                    required>
+                            </div>
+                            <!-- <div class="col-12">
+                    <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword"
+                      placeholder="Password">
+                  </div> -->
+                            <div class="col-12">
+                                <button type="button" class="btn btn-primary btn-space"
+                                    onclick="validateRegister();">SUBMIT</button>
+                                <button type="button" class="btn btn-primary btn-space" onclick="redirectLogin();">SIGN
+                                    IN</button>
+                            </div>
+                        </form>
+                        <div id="message-thank-you">
+                            <h3 class="text-center">Thank you for the registration!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content rounded-0 border-0 p-4">
+                <div class="modal-header border-0">
+                    <h3>Login</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone"
+                                placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="loginName" name="loginName"
+                                placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword"
+                                placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">LOGIN</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page title -->
+    <section class="page-title-section overlay" data-background="images/backgrounds/class-banner.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="text-align: left;">
+                    <h1 class="text-white">Class 6th - 10th</h1>
+                    <h1 class="text-white">Learning Programs</h1>
+                    <p class="mb-4 text-white" style="letter-spacing: 1px;">Our interactive learning courses brings you
+                        the perfect guide for students to understand and enhance concept knowledge</p>
+                    <!-- <ul class="list-inline custom-breadcrumb">
+                        <li class="list-inline-item"><a class="h1 text-white class-text">6th - 10th</a></li>
+                        <li class="list-inline-item"><a class="h1 text-white class-text">6th - 10th</a></li>
+                        <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+                    </ul>
+                    <h1 class="text-white class-text">Learning Program</h2>
+                    <p class="text-white">Our interactive learning courses brings you the perfect guide for students to understand and enhance concept knowledge</p> -->
+                    <a href="contact.html" class="btn btn-primary btn-space" data-toggle="modal"
+                        data-target="#signupModal">Register now</a>
+                    <!-- <p class="p text-white p-3">Eduauraa is available on android, ios and Zee5</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /page title -->
+
+    <!--breadcrumb section-->
+    <!-- <section class="">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active"><a href="subjects.html">Class 6 to 10</a></li>
+                </ol>
+            </nav>
+        </div>
+    </section> -->
+    <!--/breadcrumb section-->
+
+    <!-- available apps on screens -->
+    <section class="section custom-section-screens bg-cover">
+        <div class="">
+            <div class="">
+                <div class="row" style="padding:30px;">
+                    <div class="col-12">
+                        <h2 style="text-align: center;">Read and learn across all of your devices</h2>
+                    </div>
+                </div>
+                <div class="available-screens">
+                    <img src="images/class/6-10banner-new.jpg" alt="1-10banner">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /available apps on screens -->
+
+    <!--prefer learning partener-->
+    <section class="section custom-section bg-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="text-align: center;">
+                    <h2 class="text-color-white class-text" data-aos="fade-down" data-aos-duration="1000">
+                        It's the prefer learning partner
+                    </h2>
+                    <h2 class="class-title text-color-white sub-class-title" data-aos="fade-down" data-aos-duration="1000">Get exclusive
+                        and original content <br />by India's best teachers
+                    </h2>
+                    <h2 class="class-title text-color-white sub-class-title" data-aos="fade-down" data-aos-duration="1000">Achieve your
+                        dreams without any limitation</h2>
+                    <h2 class="class-title text-color-white pad-bottom sub-class-title" data-aos="fade-down">Download the app</h2>
+                    <!-- <h3 class="pad-bottom text-color-white">study them offline</h3> -->
+
+                    <div class="btn-signup custome-width" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="input-group mycustom">
+                            <input type="text" id="mobilenumb_class" class="form-control" required maxlength="10"
+                                minlength="10" autocomplete="off" placeholder="Enter your mobile number">
+                            <div class="input-group-prepend lerning-class">
+                                <img src="images/icon-1.png" alt="icon" width="60px" onclick="sendClassMobileNumber();">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <p class="text-color-white download-text-padding" data-aos="fade-down" data-aos-duration="1000">
+                        Eduauraa is available on Android, iOS and Zee5</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- prefer learning partener -->
+
+    <!--images overveiw-->
+    <section class="section custom-section bg-cover">
+        <div class="container">
+            <!-- <div class="row pad-bottom top-search-bar">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="form-group">
+                        <label for="boards"></label>
+                        <select name="boards" id="board" class="form-control">
+                            <option value="board">Board</option>
+                            <option value="cbse">CBSE</option>
+                            <option value="icse">ICSE</option>
+                            <option value="mh">MAHARASHTRA</option>
+                            <option value="rj">RAJASTHAN</option>
+                            <option value="mp">MADHYA PRADESH</option>
+                            <option value="up">UTTAR PRADESH</option>
+                            <option value="bh">BIHAR</option>
+                            <option value="ch">CHHATTISGARH</option>
+                            <option value="tm">TAMIL NADU</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="form-group">
+                        <label for="classes"></label>
+                        <select name="classes" id="class" class="form-control">
+                            <option value="class">Class</option>
+                            <option value="class6">Class 6</option>
+                            <option value="class7">Class 7</option>
+                            <option value="class8">Class 8</option>
+                            <option value="class9">Class 9</option>
+                            <option value="class10">Class 10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="form-group">
+                        <label for="subjects"></label>
+                        <select name="subjects" id="subject" class="form-control">
+                            <option value="subject">Subject</option>
+                            <option value="bio">Biology</option>
+                            <option value="chem">Chemistry</option>
+                            <option value="mh">Civics</option>
+                            <option value="rj">Economics</option>
+                            <option value="mp">Geography</option>
+                            <option value="up">History</option>
+                            <option value="up">Maths</option>
+                            <option value="up">Physics</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="form-group">
+                        <label for="languages"></label>
+                        <select name="languages" id="language" class="form-control">
+                            <option value="language">Language</option>
+                            <option value="cbse">English</option>
+                            <option value="icse">Hindi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 syllabus-btn">
+                <button type="submit" class="btn btn-primary">Syllabus</button>
+            </div> -->
+            <div class="col-12" style="text-align: center;">
+                <h2 class="class-text">
+                    It's as effortless<br /> as looks
+                </h2>
+            </div>
+            <!-- <div class="row">
+                <div class="col-12">
+                    <div class="board-img-container">
+                        <img src="images/class/boards.png" alt="board">
+                        <div class="col-12 board-top">
+                            <button type="submit" class="btn btn-primary">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="class-img-container">
+                        <img src="images/class/classes.png" alt="class">
+                        <div class="col-12 board-top">
+                            <button type="submit" class="btn btn-primary">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="subject-img-container">
+                        <img src="images/class/subjects.png" alt="subject">
+                        <div class="col-12 board-top">
+                            <button type="submit" class="btn btn-primary">Explore Now</button>
+                        </div>
+                    </div>
+                    <div class="medium-img-container">
+                        <img src="images/class/languages.png" alt="medium">
+                        <div class="col-12 board-top">
+                            <button type="submit" class="btn btn-primary">Explore Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="board-img-container">
+                        <img src="images/class/boards.png" alt="board" width="100%">
+                        <div class="col-12 board-top">
+                            <a href="syllabus.html">
+                                <button type="submit" class="btn btn-primary custom-color-board">Explore Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="class-img-container">
+                        <img src="images/class/classes.png" alt="class" width="100%">
+                        <div class="col-12 board-top">
+                            <a href="syllabus.html">
+                                <button type="submit" class="btn btn-primary custom-color-class">Explore Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="subject-img-container">
+                        <img src="images/class/subjects.png" alt="subject" width="100%">
+                        <div class="col-12 board-top">
+                            <a href="syllabus.html">
+                                <button type="submit" class="btn btn-primary custom-color-subjects">Explore Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="medium-img-container">
+                        <img src="images/class/languages.png" alt="medium" width="100%">
+                        <div class="col-12 board-top">
+                            <a href="syllabus.html">
+                                <button type="submit" class="btn btn-primary custom-color-languages">Explore
+                                    Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--images overveiw-->
+
+    <!--min map container-->
+    <section class="section custom-section bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="class-text p-3" style="text-align: center;">New and Sticky</h2>
+                </div>
+            </div>
+            <div class="custome-table">
+                <div
+                    class="col-md-6 col-lg-6 notAnimated animateBlock leftAlign left text-vertical animated align-center">
+                    <h2 class="class-title mind-map-subtitle" style="text-align: left;">Mind Map</h2>
+                    <p style="text-align: justify;">Mind map is our attempt to help students with last minute revisions.
+                        Mind maps are an overview of
+                        the chapter made into a summarized flow-chart, so that students can relax and revise the chapter
+                        without actually going through all the pages. Mind maps are a beautiful and concise
+                        diagrammatical representation summarizing the whole chapter.</p>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-4 mb-md-0 notAnimated animateBlock rightAlign right">
+                    <div class="mindmap-container" style="padding-top: 20px;">
+                        <img src="images/class/mind-map-new.jpg" alt="mindmap" width="100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--min map conatiner-->
+
+    <!-- Syllabus -->
+    <section class="section custom-section bg-cover">
+        <div class="container">
+            <div class="row syllabus-explore">
+                <div class="col-md-8 col-lg-8 col-sm-8">
+                    <h3>Syllabus curated as per the board</h3>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-sm-4">
+                    <div class="col-12">
+                        <a href="syllabus.html">
+                            <button type="submit" class="btn btn-primary custom-color-board">Explore Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Syllabus -->
+
+    <!-- Downloads -->
+    <section class="section bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Start your learning journey</h2>
+                    <h6 class="download-pad">Available on</h6>
+                    <div class="icons-download">
+                        <a href="">
+                            <img src="images/icons/512x512.png" alt="App store" width="150px">
+                        </a>
+
+                        <a href="">
+                            <img src="images/icons/512x512g.png" alt="google play" width="150px">
+                        </a>
+
+                        <a href="">
+                            <img src="images/icons/Available_on_Zee5.jpg" alt="Zee5" width="150px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Downloads -->
+
+    <!-- footer -->
+    <footer>
+        <!-- newsletter -->
+        <!-- <div class="">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 ml-auto py-5 newsletter-block" style="padding-top: 0px !important;">
+                    <h3>Register Now</h3>
+                      <div class="input-wrapper">
+                        <input type="email" class="form-control border-0" id="newsletter" name="newsletter"
+                          placeholder="Enter Your Email...">
+                        <button type="submit" value="send" class="btn btn-secondary" onclick="postEmailData()">Register</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+        <!-- footer content -->
+        <div class="footer bg-footer section border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                        <!-- logo -->
+                        <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png"
+                                alt="logo"></a>
+                        <ul class="list-unstyled">
+                            <li class="mb-2 epq-style">105/106, Dream Square, Dalia Industrial Estate, Andheri West,
+                                Mumbai,
+                                Maharashtra - 400053, India.</li>
+                            <li class="mb-2">+91 9999 9999</li>
+                            <li class="mb-2">+91 9999 9999</li>
+                            <li class="mb-2"><a href="mailto:contact@eduauraa.com">contact@eduauraa.com</a></li>
+                        </ul>
+                    </div>
+                    <!-- company -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">ABOUT US</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="about.html">About Eduauraa</a></li>
+                            <li class="mb-3"><a class="text-color" href="managment.html">Management Team</a></li>
+                            <li class="mb-3"><a class="text-color" href="teacher.html">Teacher's</a></li>
+                        </ul>
+                    </div>
+                    <!-- links -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">COURSES</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="class_6_10.html">Class 6 to 10</a></li>
+                            <li class="mb-3"><a class="text-color" href="class_11_12.html">Class 11 to 12</a></li>
+                            <!-- <li class="mb-3"><a class="text-color" href="subjects.html">Class 6</a></li>
+                          <li class="mb-3"><a class="text-color" href="subjects.html">Class 7</a></li>
+                          <li class="mb-3"><a class="text-color" href="subjects.html">Class 8</a></li>
+                          <li class="mb-3"><a class="text-color" href="subjects.html">Class 9</a></li>
+                          <li class="mb-3"><a class="text-color" href="subjects.html">Class 10</a></li> -->
+                            <li class="mb-3"><a class="text-color" href="competitive.html">Competitive Exams</a></li>
+                            <li class="mb-3"><a class="text-color" href="spoken-english.html">Spoken English</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">SUPPORT</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="contact.html">Contact Us</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Career</a></li>
+                            <li class="mb-3"><a class="text-color" href="faq.html">FAQ's</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">BE A MENTOR</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="teach-with-us.html">Teach With Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright py-4 bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 text-sm-left text-center">
+                        <p class="mb-0 text-white">Copyright
+                            <script>
+                                var CurrentYear = new Date().getFullYear()
+                                document.write(CurrentYear)
+                            </script>
+                            © <a href="https://eduauraa.com">Eduauraa.com</a> </p>All Rights Reserved.
+                    </div>
+                    <div class="col-sm-5 text-sm-right text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                        class="ti-facebook text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                        class="ti-twitter-alt text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                        class="ti-instagram text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                        class="ti-dribbble text-primary"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src="plugins/aos/aos.js"></script>
+    <!-- venobox popup -->
+    <script src="plugins/venobox/venobox.min.js"></script>
+    <!-- mixitup filter -->
+    <script src="plugins/mixitup/mixitup.min.js"></script>
+    <!-- google map -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WF71KZL44"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2WF71KZL44');
+    </script>
+
+</body>
+
+</html>

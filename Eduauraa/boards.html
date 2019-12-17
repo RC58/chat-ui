@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Eduauraa: A Premier Digital Learning Platform</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="manifest" href="images/icons/manifest.json">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <header class="fixed-top header">
+    <!-- top header -->
+    <!-- <div class="top-header py-2 bg-white">
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-lg-4 text-center text-lg-left">
+              <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +91 1234 5678</a>
+              <ul class="list-inline d-inline">
+                <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+                      class="ti-facebook"></i></a></li>
+                <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+                      class="ti-twitter-alt"></i></a></li>
+                <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+                      class="ti-linkedin"></i></a></li>
+                <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+                      class="ti-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#"
+                    data-toggle="modal" data-target="#loginModal">login</a></li>
+                <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#"
+                    data-toggle="modal" data-target="#signupModal">register</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <!-- navbar -->
+    <div class="navigation w-100">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto text-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+
+              <li class="nav-item dropdown view">
+                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ABOUT US
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="about.html">About Eduauraa</a>
+                  <a class="dropdown-item" href="about.html">What Sets Us Apart</a>
+                  <a class="dropdown-item" href="about.html">Mission, Vision & Motto</a>
+                  <a class="dropdown-item" href="about.html">Our Values & Attributes</a>
+
+                </div>
+              </li>
+              <li class="nav-item dropdown view">
+                <a class="nav-link dropdown-toggle" href="boards.html" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  COURSES
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="boards.html">Grade 6th</a>
+                  <a class="dropdown-item" href="boards.html">Grade 7th</a>
+                  <a class="dropdown-item" href="boards.html">Grade 8th</a>
+                  <a class="dropdown-item" href="boards.html">Grade 9th</a>
+                  <a class="dropdown-item" href="boards.html">Grade 10th</a>
+                  <a class="dropdown-item" href="spoken-english.html">SPOKEN ENGLISH</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown view">
+                <a class="nav-link dropdown-toggle" href="features.html" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  FEATURES
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="features.html">EPQ</a>
+                  <a class="dropdown-item" href="features.html">EA</a>
+                  <a class="dropdown-item" href="features.html">My Downloads</a>
+                  <a class="dropdown-item" href="features.html">Doubt Solver</a>
+                  <a class="dropdown-item" href="features.html">Virtual Class</a>
+                </div>
+              </li>
+
+              <li class="nav-item @@teachwithus">
+                <a class="nav-link" href="#">TEACH WITH US</a>
+              </li>
+
+
+              <li class="nav-item @@faqs">
+                <a class="nav-link" href="faq.html">FAQ'S</a>
+              </li>
+              <li class="nav-item @@career">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content rounded-0 border-0 p-4">
+        <div class="modal-header border-0">
+          <h3>Register</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="login">
+            <form action="#" class="row">
+              <div class="col-12">
+                <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+              </div>
+              <div class="col-12">
+                <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+              </div>
+              <div class="col-12">
+                <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword"
+                  placeholder="Password">
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">SIGN UP</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content rounded-0 border-0 p-4">
+        <div class="modal-header border-0">
+          <h3>Login</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="row">
+            <div class="col-12">
+              <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+            </div>
+            <div class="col-12">
+              <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword"
+                placeholder="Password">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">LOGIN</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- page title -->
+  <section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <ul class="list-inline custom-breadcrumb">
+            <li class="list-inline-item"><a class="h2 text-primary font-secondary">Board</a></li>
+            <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+          </ul>
+          <p class="text-lighten">Grade wise syllabus is mapped with each board. Utmost care has been taken to develop
+            learning content as per the syllabus of each board.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /page title -->
+
+  <!--breadcrumb section-->
+  <section class="">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Grade 6</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Board</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!--/breadcrumb section-->
+
+  <!-- scholarship -->
+  <section class="section">
+    <div class="container">
+      <!-- <div class="row mb-5">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img class="img-fluid" src="images/scholarship/scholarship.jpg" alt="scholarship news">
+      </div>
+      <div class="col-md-6">
+        <h2>SCHOLARSHIPS NEWS</h2>
+        <strong class="mb-4 d-block"><i>Our campuses are living laboratories for sustainability.</i></strong>
+        <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore
+          et.dolore magna aliquauis aute irure dolor.
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Quas cum ut ab nesciunt distinctio maxime expedita fugit laborum? Aliquid,
+          quia.</p>
+      </div>
+    </div> -->
+      <div class="row">
+        <!-- CBSE -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <div class="card-hover">
+              <img class="card-img-top board-card overlay" src="images/board/board_cbse.jpg" alt="cbse">
+              <div>
+                <h3 class="board-text">CBSE</h3>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title mb-3">CBSE</h4>
+                <p>The Central Board of Secondary Education (CBSE) is a national level board of education in India for
+                  public and private schools, controlled and managed by Union Government of India. CBSE has asked all
+                  schools affiliated to follow only NCERT curriculum.</p>
+                <p>We are providing Grade wise learning content fully mapped with CBSE board syllabus on our website for
+                  class 6th to 10th.</p>
+              </div>
+              <div class="btn-center">
+                <div>
+                  <a class="btn btn-sm btn-primary-outline" href="subjects.html">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ICSE -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <div class="card-hover">
+              <img class="card-img-top board-card overlay" src="images/board/board_icse.jpg" alt="icse">
+              <div>
+                <h3 class="board-text">ICSE</h3>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title mb-3">ICSE</h4>
+                <p>The Indian Certificate of Secondary Education (ICSE) is an examination conducted by the Council for
+                  the
+                  Indian School Certificate Examination. It is a private, non-governmental board of school education in
+                  India for class 10th.</p>
+                <p>We are providing Grade wise learning content fully mapped with ICSE board syllabus on our website for
+                  class 6th to 10th.</p>
+              </div>
+              <div class="btn-center">
+                <div>
+                  <a class="btn btn-sm btn-primary-outline" href="subjects.html">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MAHARASHTRA -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <div class="card-hover">
+              <img class="card-img-top board-card overlay" src="images/board/board_mh.jpg" alt="maharashtra">
+              <div>
+                <h3 class="board-text">MAHARASHTRA</h3>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title mb-3">MAHARASHTRA</h4>
+                <p>The Maharashtra State Board of Secondary and Higher Secondary Education or MSBSHSE is an independent
+                  body of the education system in Maharashtra, India. The responsibility of this board is to upgrade the
+                  standards of education in the state of Maharashtra as well as introducing new innovations in the
+                  higher
+                  secondary and secondary education in the state.</p>
+                <p>We are providing Grade wise learning content fully mapped with Maharashtra board syllabus on our
+                  website for class 6th to 10th.</p>
+              </div>
+              <div class="btn-center">
+                <div>
+                  <a class="btn btn-sm btn-primary-outline" href="subjects.html">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- RAJASTHAN -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <div class="card-hover">
+              <img class="card-img-top board-card overlay" src="images/board/board_rj.jpg" alt="rajasthan">
+              <div>
+                <h3 class="board-text">RAJASTHAN</h3>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title mb-3">RAJASTHAN</h4>
+                <p>Rajasthan Board of Secondary Education (RBSE) is the education board that controls Secondary as well
+                  as
+                  Senior Secondary school level education in the state of Rajasthan.</p>
+                <p>We are providing Grade wise learning content fully mapped with Rajasthan board syllabus on our
+                  website
+                  for class 6th to 10th.</p>
+              </div>
+              <div class="btn-center">
+                <div>
+                  <a class="btn btn-sm btn-primary-outline" href="subjects.html">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MADHYA PRADESH -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <!-- <img class="card-img-top board-card" src="images/scholarship/scholarship-item-2.jpg"
+              alt="scholarship-thumb">
+            <div class="board-text">RAJASTHAN</div> -->
+            <div class="card-hover">
+              <img class="card-img-top board-card overlay" src="images/board/board_mp.jpg" alt="mp">
+              <div>
+                <h3 class="board-text">MADHYA PRADESH</h3>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title mb-3">MADHYA PRADESH</h4>
+                <p>The Madhya Pradesh Board of Secondary Education popularly known as MP Board is the educational board
+                  of
+                  the state of Madhya Pradesh.</p>
+                <p>We are providing Grade wise learning content fully mapped with Madhya Pradesh board syllabus on our
+                  website for class 6th to 10th.</p>
+              </div>
+              <div class="btn-center">
+                <div>
+                  <a class="btn btn-sm btn-primary-outline" href="subjects.html">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- UTTAR PRADESH -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <div class="card-hover">
+              <img class="card-img-top board-card overlay" src="images/board/board_up.jpg" alt="uttar-pradesh">
+              <div>
+                <h3 class="board-text">UTTAR PRADESH</h3>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title mb-3">UTTAR PRADESH</h4>
+                <p>UP Board follows NCERT textbooks for all subjects in order to improve the quality of education in the
+                  state. Syllabus contains all the topics which are to be covered within the academic year and topics
+                  are divided as per the academic session.</p>
+                <p>We are providing Grade wise learning content fully mapped with Uttar Pradesh state board syllabus on
+                  our website for class 6th to 10th.</p>
+              </div>
+              <div class="btn-center">
+                <div>
+                  <a class="btn btn-sm btn-primary-outline" href="subjects.html">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BIHAR -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <div class="card-hover">
+              <img class="card-img-top board-card overlay" src="images/board/board_bh.jpg" alt="bihar">
+              <div>
+                <h3 class="board-text">BIHAR</h3>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title mb-3">BIHAR</h4>
+                <p>Bihar School Examination Board is the body that conducts the 10th and 12th board examination in Bihar
+                  State.</p>
+                <p>We are providing Grade wise learning content fully mapped with Bihar state board syllabus on our
+                  website for class 6th to 10th.</p>
+              </div>
+              <div class="btn-center">
+                <div>
+                  <a class="btn btn-sm btn-primary-outline" href="subjects.html">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CHHATTISGARH -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <!-- <img class="card-img-top board-card" src="images/scholarship/scholarship-item-2.jpg"
+                alt="scholarship-thumb">
+              <div class="board-text">RAJASTHAN</div> -->
+            <div class="card-hover">
+              <img class="card-img-top board-card overlay" src="images/board/board_cg.jpg" alt="chhattisgarh">
+              <div>
+                <h3 class="board-text">CHHATTISGARH</h3>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title mb-3">CHHATTISGARH</h4>
+                <p>Formerly known as Chhattisgarh Government School Education Department, Chhattisgarh Board Secondary
+                  Education abbreviated as CGBSE is a state level examination board. The board is the state agency for
+                  the
+                  Government of Chhattisgarh which was constituted for the development and promotion of secondary
+                  education within the state.</p>
+                <p>We are providing Grade wise learning content fully mapped with Chhattisgarh state board syllabus on
+                  our
+                  website for class 6th to 10th.</p>
+              </div>
+              <div class="btn-center">
+                <div>
+                  <a class="btn btn-sm btn-primary-outline" href="subjects.html">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TAMIL NADU -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <div class="card-hover">
+              <img class="card-img-top board-card overlay" src="images/board/board_tm.jpg" alt="tamil-nadu">
+              <div>
+                <h3 class="board-text">TAMIL NADU</h3>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title mb-3">TAMIL NADU</h4>
+                <p>State Council of Educational Research and Training (SCERT) acts as a state level apex organisation
+                  for
+                  designing and executing training programmes, revising curriculum and syllabus.</p>
+                <p>We are providing Grade wise learning content fully mapped with Tamil Nadu state board (SCERT)
+                  syllabus
+                  on our website for class 6th to 10th.</p>
+              </div>
+              <div class="btn-center">
+                <div>
+                  <a class="btn btn-sm btn-primary-outline" href="subjects.html">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /scholarship -->
+
+  <!-- footer -->
+  <footer>
+    <!-- newsletter -->
+    <!-- <div class="">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ml-auto py-5 newsletter-block" style="padding-top: 0px !important;">
+              <h3>Register Now</h3>
+                <div class="input-wrapper">
+                  <input type="email" class="form-control border-0" id="newsletter" name="newsletter"
+                    placeholder="Enter Your Email...">
+                  <button type="submit" value="send" class="btn btn-secondary" onclick="postEmailData()">Register</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <!-- footer content -->
+    <div class="footer bg-footer section border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+            <!-- logo -->
+            <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+            <ul class="list-unstyled">
+              <li class="mb-2 epq-style">105/106, Dream Square, Dalia Industrial Estate, Andheri West, Mumbai,
+                Maharashtra - 400053, India.</li>
+              <li class="mb-2">+91 9999 9999</li>
+              <li class="mb-2">+91 9999 9999</li>
+              <li class="mb-2"><a href="mailto:contact@eduauraa.com">contact@eduauraa.com</a></li>
+            </ul>
+          </div>
+          <!-- company -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <h4 class="text-white mb-5">ABOUT US</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="about.html">About Eduauraa</a></li>
+              <li class="mb-3"><a class="text-color" href="about.html">What Sets Us Apart</a></li>
+              <li class="mb-3"><a class="text-color" href="about.html">Mission, Vision & Motto</a></li>
+              <li class="mb-3"><a class="text-color" href="about.html">Our Values & Attributes</a></li>
+            </ul>
+          </div>
+          <!-- links -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <h4 class="text-white mb-5">COURSES</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="boards.html">Class 6th</a></li>
+              <li class="mb-3"><a class="text-color" href="boards.html">Class 7th</a></li>
+              <li class="mb-3"><a class="text-color" href="boards.html">Class 8th</a></li>
+              <li class="mb-3"><a class="text-color" href="boards.html">Class 9th</a></li>
+              <li class="mb-3"><a class="text-color" href="boards.html">Class 10th</a></li>
+              <li class="mb-3"><a class="text-color" href="spoken-english.html">Spoken English</a></li>
+            </ul>
+          </div>
+          <!-- support -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <h4 class="text-white mb-5">SUPPORT</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="#">Book A Demo</a></li>
+              <li class="mb-3"><a class="text-color" href="contact.html">Contact Us</a></li>
+              <li class="mb-3"><a class="text-color" href="#">Career</a></li>
+              <li class="mb-3"><a class="text-color" href="faq.html">FAQ's</a></li>
+
+            </ul>
+          </div>
+          <!-- support -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <h4 class="text-white mb-5">BE A MENTOR</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="#">Teach With Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright py-4 bg-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 text-sm-left text-center">
+            <p class="mb-0 text-white">Copyright
+              <script>
+                var CurrentYear = new Date().getFullYear()
+                document.write(CurrentYear)
+              </script>
+              © <a href="https://eduauraa.com">Eduauraa.com</a>. </p>All Rights Reserved.
+          </div>
+          <div class="col-sm-5 text-sm-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                    class="ti-facebook text-primary"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                    class="ti-twitter-alt text-primary"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                    class="ti-instagram text-primary"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                    class="ti-dribbble text-primary"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- aos -->
+  <script src="plugins/aos/aos.js"></script>
+  <!-- venobox popup -->
+  <script src="plugins/venobox/venobox.min.js"></script>
+  <!-- mixitup filter -->
+  <script src="plugins/mixitup/mixitup.min.js"></script>
+  <!-- google map -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WF71KZL44"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-2WF71KZL44');
+  </script>
+
+</body>
+
+</html>

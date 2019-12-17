@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Eduauraa: A Premier Digital Learning Platform</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+  <link rel="manifest" href="images/icons/manifest.json">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <header class="fixed-top header">
+    <!-- top header -->
+    <!-- navbar -->
+    <div class="navigation w-100">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+
+              <li class="nav-item dropdown view">
+                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ABOUT US
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="about.html">About Eduauraa</a>
+                  <a class="dropdown-item" href="managment.html">Managment Team</a>
+                  <a class="dropdown-item" href="teacher.html">Teacher's</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown view active">
+                <a class="nav-link dropdown-toggle" href="subjects.html" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  COURSES
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="class_6_10.html" id="grade6to10"
+                    onclick="changeGrade(document.getElementById('grade6to10').id)">Class 6 to
+                    10</a>
+                  <a class="dropdown-item" href="class_11_12.html" id="grade6to10"
+                    onclick="changeGrade(document.getElementById('grade6to10').id)">Class 11 to
+                    12</a>
+                  <!-- <a class="dropdown-item" href="subjects.html" id="grade6"
+                                            onclick="changeGrade(document.getElementById('grade6').id)">Class 6</a>
+                                        <a class="dropdown-item" href="subjects.html" id="grade7"
+                                            onclick="changeGrade(document.getElementById('grade7').id)">Class 7</a>
+                                        <a class="dropdown-item" href="subjects.html" id="grade8"
+                                            onclick="changeGrade(document.getElementById('grade8').id)">Class 8</a>
+                                        <a class="dropdown-item" href="subjects.html" id="grade9"
+                                            onclick="changeGrade(document.getElementById('grade9').id)">Class 9</a>
+                                        <a class="dropdown-item" href="subjects.html" id="grade10"
+                                            onclick="changeGrade(document.getElementById('grade10').id)">Class 10</a> -->
+                  <a class="dropdown-item" href="competitive.html">Competitive Exams</a>
+                  <a class="dropdown-item" href="spoken-english.html">Spoken English</a>
+                </div>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="features.html">FEATURES</a>
+              </li> -->
+
+              <li class="nav-item">
+                <a class="nav-link" href="teach-with-us.html">TEACH WITH US</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ'S</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content rounded-0 border-0 p-4">
+        <div class="modal-header border-0">
+          <h3 id="form-data-title">Register</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="login">
+            <form method="POST" name="registerForm" novalidate id="form-data">
+              <div class="col-12">
+                <input type="text" class="form-control mb-3" id="fname" name="fname" placeholder="First Name" required>
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control mb-3" id="lname" name="lname" placeholder="Last Name" required>
+              </div>
+              <div class="col-12">
+                <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control mb-3" id="phone" name="phone" placeholder="Phone" required>
+              </div>
+              <!-- <div class="col-12">
+                <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword"
+                  placeholder="Password">
+              </div> -->
+              <div class="col-12">
+                <button type="button" class="btn btn-primary btn-space" onclick="validateRegister();">SUBMIT</button>
+                <button type="button" class="btn btn-primary btn-space" onclick="redirectLogin();">SIGN IN</button>
+              </div>
+            </form>
+            <div id="message-thank-you">
+              <h3 class="text-center">Thank you for the registration!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content rounded-0 border-0 p-4">
+        <div class="modal-header border-0">
+          <h3>Login</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="row">
+            <div class="col-12">
+              <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+            </div>
+            <div class="col-12">
+              <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword"
+                placeholder="Password">
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">LOGIN</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- page title -->
+  <section class="page-title-section overlay" data-background="images/backgrounds/11-12-banner.png">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8" style="text-align: left;">
+          <h1 class="text-white">Intermediate</h1>
+          <p class="mb-4 text-white" style="letter-spacing: 1px;">This online Spoken English Intermediate level course
+            will teach you everything you need to get started with your intermediate level English Speaking. We will
+            cover topics:</p>
+          <a href="contact.html" class="btn btn-primary btn-space" data-toggle="modal"
+            data-target="#signupModal">Register now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /page title -->
+
+  <!--breadcrumb section-->
+  <!-- <section class="">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="spoken-english.html">Spoken English</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Beginner</li>
+        </ol>
+      </nav>
+    </div>
+  </section> -->
+  <!--/breadcrumb section-->
+
+  <!-- grammar -->
+  <section class="section bg-cover custom-section">
+    <div class="container">
+      <div class="custome-table">
+        <div class="col-md-6 col-lg-6 mb-4 mb-md-0 notAnimated animateBlock rightAlign right hidden-lg text-center">
+          <img class="img-fluid grammar-img" src="images/spoken-english/english_grammar_icon.png" alt="grammar">
+        </div>
+        <div class="col-md-6 col-lg-6 animateBlock leftAlign left text-vertical animated align-center">
+          <h2 class="make-possible">Grammar</h2>
+          <p class="epq-style para-pad">Speaking grammatically wrong English is worse than not knowing English. So with
+            our Spoken English
+            course improves your grammar skills.</p>
+          <!-- <div>
+            <a href="beginner.html" class="btn btn-primary btn-space">View More</a>
+          </div> -->
+        </div>
+        <div class="col-md-6 col-lg-6 mb-4 mb-md-0 notAnimated animateBlock rightAlign right hidden-xs text-center">
+          <img class="img-fluid grammar-img" src="images/spoken-english/english_grammar_icon.png" alt="grammar">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/grammar-->
+
+  <!-- Vocabulary -->
+  <section class="section bg-gray custom-section">
+    <div class="container">
+      <div class="custome-table">
+        <div class="col-md-6 col-lg-6 mb-4 mb-md-0 notAnimated animateBlock leftAlign left text-center">
+          <img class="img-fluid vocabulary-img" src="images/spoken-english/vocabulary_icon.png" alt="vocabulary">
+        </div>
+        <div class="col-md-6 col-lg-6 notAnimated animateBlock rightAlign right text-vertical align-center">
+          <h2 class="make-possible">Vocabulary</h2>
+          <p class="epq-style">It feels bad to run out of words in the middle of a conversation. So to help yourself
+            with that,
+            improve your vocabulary with our Spoken English Course</p>
+          <!-- <div>
+            <a href="intermediate.html" class="btn btn-primary btn-space">View More</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Vocabulary -->
+
+  <!-- conversation -->
+  <section class="section bg-cover custom-section">
+    <div class="container">
+      <div class="custome-table">
+        <div class="col-md-6 col-lg-6 mb-4 mb-md-0 notAnimated animateBlock rightAlign right hidden-lg text-center">
+          <img class="img-fluid conversation-img" src="images/spoken-english/conversation_icon.png" alt="conversation">
+        </div>
+        <div class="col-md-6 col-lg-6 animateBlock leftAlign left text-vertical animated align-center">
+          <h2 class="make-possible">Conversation</h2>
+          <p class="epq-style para-pad">Speak appropriate English with friends, family, colleagues and strangers that
+            you meet every day. With
+            our Spoken English Course converse correctly with respect to whom you are talking, where you are
+            talking and when you are talking</p>
+          <!-- <div>
+            <a href="beginner.html" class="btn btn-primary btn-space">View More</a>
+          </div> -->
+        </div>
+        <div class="col-md-6 col-lg-6 mb-4 mb-md-0 notAnimated animateBlock rightAlign right hidden-xs text-center">
+          <img class="img-fluid conversation-img" src="images/spoken-english/conversation_icon.png" alt="conversation">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/conversation-->
+
+  <!-- Creative Writing -->
+  <section class="section bg-gray custom-section">
+    <div class="container">
+      <div class="custome-table">
+        <div class="col-md-6 col-lg-6 mb-4 mb-md-0 notAnimated animateBlock leftAlign left text-center">
+          <img class="img-fluid creative-writing-img" src="images/spoken-english/creative_writing_icon.png"
+            alt="creative_writing_icon">
+        </div>
+        <div class="col-md-6 col-lg-6 notAnimated animateBlock rightAlign right text-vertical align-center">
+          <h2 class="make-possible">Creative Writing</h2>
+          <p class="epq-style">Don’t let writing letters and emails scare you. Don’t take any other persons help when
+            writing in
+            English. With our Spoken English Course enhance your creative writing skills</p>
+          <!-- <div>
+            <a href="intermediate.html" class="btn btn-primary btn-space">View More</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Creative Writing -->
+
+  <!-- Visual and Listening -->
+  <section class="section bg-cover custom-section">
+    <div class="container">
+      <div class="custome-table">
+        <div class="col-md-6 col-lg-6 mb-4 mb-md-0 notAnimated animateBlock rightAlign right hidden-lg text-center">
+          <img class="img-fluid visual-listening-img" src="images/spoken-english/visual_listening_icon.png"
+            alt="visual_listening_icon">
+        </div>
+        <div class="col-md-6 col-lg-6 animateBlock leftAlign left text-vertical animated align-center">
+          <h2 class="make-possible">Visual and Listening</h2>
+          <p class="epq-style para-pad">I hear- I forget, I see- I remember, I do- I understand. We believe that visual
+            and listening skills
+            is what makes a person distinct. With our Spoken English Course sharpen your Visual and Listening
+            skills</p>
+          <!-- <div>
+            <a href="beginner.html" class="btn btn-primary btn-space">View More</a>
+          </div> -->
+        </div>
+        <div class="col-md-6 col-lg-6 mb-4 mb-md-0 notAnimated animateBlock rightAlign right hidden-xs text-center">
+          <img class="img-fluid visual-listening-img" src="images/spoken-english/visual_listening_icon.png"
+            alt="visual_listening_icon">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/Visual and Listening-->
+
+  <!-- Literature -->
+  <section class="section bg-gray custom-section">
+    <div class="container">
+      <div class="custome-table">
+        <div class="col-md-6 col-lg-6 mb-4 mb-md-0 notAnimated animateBlock leftAlign left text-center">
+          <img class="img-fluid literature-img" src="images/spoken-english/literature_icon.png" alt="literature_icon">
+        </div>
+        <div class="col-md-6 col-lg-6 notAnimated animateBlock rightAlign right text-vertical align-center">
+          <h2 class="make-possible">Literature</h2>
+          <p class="epq-style">Poems and stories are something we enjoy in any language. Don’t hesitate to read English
+            literature.
+            With our Spoken English course we take down the barriers of language and bring you the best stories
+            and poems of English Literature for you</p>
+          <!-- <div>
+            <a href="intermediate.html" class="btn btn-primary btn-space">View More</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Literature -->
+
+  <!-- research -->
+  <!-- <section class="section custom-section bg-cover">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <img class="card-img-top" src="images/spoken-english/Spoken-Enlish-Images1.jpg" alt="grammar">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title">Grammar</h4>
+                <p class="card-text">
+                  Learn Grammar skills for speaking this level of English
+                </p>
+                <p class="card-text">
+                  Speaking grammatically wrong English is worse than not knowing English. So with our Spoken English
+                  course improves your grammar skills.
+                </p>
+              </div>
+              <div class="subject-counter">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">100+</span><br><span
+                        class="subject-total-name">videos</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">50+</span><br><span
+                        class="subject-total-name">eBooks</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">100+</span><br><span
+                        class="subject-total-name">test papers</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <img class="card-img-top" src="images/spoken-english/Spoken-Enlish-Images2.jpg" alt="vocabulary">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title">Vocabulary</h4>
+                <p class="card-text">
+                  Learn Vocabulary skills for speaking this level of English
+                </p>
+                <p class="card-text">
+                  It feels bad to run out of words in the middle of a conversation. So to help yourself with that,
+                  improve your vocabulary with our Spoken English Course.
+                </p>
+              </div>
+              <div class="subject-counter">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">200+</span><br><span
+                        class="subject-total-name">videos</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">150+</span><br><span
+                        class="subject-total-name">eBooks</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">100+</span><br><span
+                        class="subject-total-name">test papers</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <img class="card-img-top" src="images/spoken-english/Spoken-Enlish-Images3.jpg" alt="conversation">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title">Conversation</h4>
+                <p class="card-text">
+                  Learn Conversation skills for speaking this level of English
+                </p>
+                <p class="card-text">
+                  Speak appropriate English with friends, family, colleagues and strangers that you meet every day. With
+                  our Spoken English Course converse correctly with respect to whom you are talking, where you are
+                  talking and when you are talking.
+                </p>
+              </div>
+              <div class="subject-counter">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">150+</span><br><span
+                        class="subject-total-name">videos</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">100+</span><br><span
+                        class="subject-total-name">eBooks</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">200+</span><br><span
+                        class="subject-total-name">test papers</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <img class="card-img-top" src="images/spoken-english/Spoken-Enlish-Images4.jpg" alt="creative-writing">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title">Creative Writing</h4>
+                <p class="card-text">
+                  Learn Creative skills for speaking this level of English
+                </p>
+                <p class="card-text">
+                  Don’t let writing letters and emails scare you. Don’t take any other persons help when writing in
+                  English. With our Spoken English Course enhance your creative writing skills.
+                </p>
+              </div>
+              <div class="subject-counter">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">200+</span><br><span
+                        class="subject-total-name">videos</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">200+</span><br><span
+                        class="subject-total-name">eBooks</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">150+</span><br><span
+                        class="subject-total-name">test papers</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <img class="card-img-top" src="images/spoken-english/Spoken-Enlish-Images5.jpg" alt="visual-and-listening">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title">Visual and Listening</h4>
+                <p class="card-text">
+                  Learn Visual and Listening skills for speaking this level of English
+                </p>
+                <p class="card-text">
+                  I hear- I forget, I see- I remember, I do- I understand. We believe that visual and listening skills
+                  is what makes a person distinct. With our Spoken English Course sharpen your Visual and Listening
+                  skills.
+                </p>
+              </div>
+              <div class="subject-counter">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">250+</span><br><span
+                        class="subject-total-name">videos</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">350+</span><br><span
+                        class="subject-total-name">eBooks</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">150+</span><br><span
+                        class="subject-total-name">test papers</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card hover-shadow board-card h-100">
+            <img class="card-img-top" src="images/spoken-english/Spoken-Enlish-Images6.jpg" alt="literature">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="card-title">Literature</h4>
+                <p class="card-text">
+                  Learn Literature skills for speaking this level of English
+                </p>
+                <p class="card-text">
+                  Poems and stories are something we enjoy in any language. Don’t hesitate to read English literature.
+                  With our Spoken English course we take down the barriers of language and bring you the best stories
+                  and poems of English Literature for you.
+                </p>
+              </div>
+              <div class="subject-counter">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">150+</span><br><span
+                        class="subject-total-name">videos</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">200+</span><br><span
+                        class="subject-total-name">eBooks</span></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subject-total-set"><span class="subject-total-count">150+</span><br><span
+                        class="subject-total-name">test papers</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+  <!-- /research -->
+
+  <!-- footer -->
+  <footer>
+    <!-- newsletter -->
+    <!-- <div class="">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 ml-auto py-5 newsletter-block" style="padding-top: 0px !important;">
+                    <h3>Register Now</h3>
+                      <div class="input-wrapper">
+                        <input type="email" class="form-control border-0" id="newsletter" name="newsletter"
+                          placeholder="Enter Your Email...">
+                        <button type="submit" value="send" class="btn btn-secondary" onclick="postEmailData()">Register</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+    <!-- footer content -->
+    <div class="footer bg-footer section border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+            <!-- logo -->
+            <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+            <ul class="list-unstyled">
+              <li class="mb-2 epq-style">105/106, Dream Square, Dalia Industrial Estate, Andheri West,
+                Mumbai,
+                Maharashtra - 400053, India.</li>
+              <li class="mb-2">+91 9999 9999</li>
+              <li class="mb-2">+91 9999 9999</li>
+              <li class="mb-2"><a href="mailto:contact@eduauraa.com">contact@eduauraa.com</a></li>
+            </ul>
+          </div>
+          <!-- company -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <h4 class="text-white mb-5">ABOUT US</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="about.html">About Eduauraa</a></li>
+              <li class="mb-3"><a class="text-color" href="managment.html">Management Team</a></li>
+              <li class="mb-3"><a class="text-color" href="teacher.html">Teacher's</a></li>
+            </ul>
+          </div>
+          <!-- links -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <h4 class="text-white mb-5">COURSES</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="class_6_10.html">Class 6 to 10</a></li>
+              <li class="mb-3"><a class="text-color" href="class_11_12.html">Class 11 to 12</a></li>
+              <!-- <li class="mb-3"><a class="text-color" href="subjects.html">Class 6</a></li>
+                          <li class="mb-3"><a class="text-color" href="subjects.html">Class 7</a></li>
+                          <li class="mb-3"><a class="text-color" href="subjects.html">Class 8</a></li>
+                          <li class="mb-3"><a class="text-color" href="subjects.html">Class 9</a></li>
+                          <li class="mb-3"><a class="text-color" href="subjects.html">Class 10</a></li> -->
+              <li class="mb-3"><a class="text-color" href="competitive.html">Competitive Exams</a></li>
+              <li class="mb-3"><a class="text-color" href="spoken-english.html">Spoken English</a></li>
+            </ul>
+          </div>
+          <!-- support -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <h4 class="text-white mb-5">SUPPORT</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="contact.html">Contact Us</a></li>
+              <li class="mb-3"><a class="text-color" href="#">Career</a></li>
+              <li class="mb-3"><a class="text-color" href="faq.html">FAQ's</a></li>
+
+            </ul>
+          </div>
+          <!-- support -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+            <h4 class="text-white mb-5">BE A MENTOR</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="teach-with-us.html">Teach With Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright py-4 bg-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 text-sm-left text-center">
+            <p class="mb-0 text-white">Copyright
+              <script>
+                var CurrentYear = new Date().getFullYear()
+                document.write(CurrentYear)
+              </script>
+              © <a href="https://eduauraa.com">Eduauraa.com</a> </p>All Rights Reserved.
+          </div>
+          <div class="col-sm-5 text-sm-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                    class="ti-facebook text-primary"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                    class="ti-twitter-alt text-primary"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                    class="ti-instagram text-primary"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                    class="ti-dribbble text-primary"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- aos -->
+  <script src="plugins/aos/aos.js"></script>
+  <!-- venobox popup -->
+  <script src="plugins/venobox/venobox.min.js"></script>
+  <!-- mixitup filter -->
+  <script src="plugins/mixitup/mixitup.min.js"></script>
+  <!-- google map -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WF71KZL44"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-2WF71KZL44');
+  </script>
+
+</body>
+
+</html>
