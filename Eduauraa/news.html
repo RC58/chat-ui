@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eduauraa: A Premier Digital Learning Platform</title>
+
+    <!-- mobile responsive meta -->
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="date" content="2020-01-21" scheme="YYYY-MM-DD">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/manifest.json">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="fixed-top header">
+        <!-- top header -->
+        <!-- navbar -->
+        <div class="navigation w-100">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <a class="navbar-brand" href="index.html"><img src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/logo/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse"
+                        data-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav ml-auto text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+
+                            <li class="nav-item dropdown view">
+                                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    ABOUT US
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="video-promo.html">The Eduauraa Story</a>
+                                    <a class="dropdown-item" href="about.html">Pillars of Eduauraa</a>
+                                    <a class="dropdown-item" href="our-partner.html">Eduauraa * Zee5</a>
+                                    <a class="dropdown-item" href="managment.html">Management Team</a>
+                                    <a class="dropdown-item" href="teacher.html">Teachers</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown view">
+                                <a class="nav-link dropdown-toggle" href="subjects.html" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    COURSES
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="class_6_10.html" id="grade6to10"
+                                        onclick="changeGrade(document.getElementById('grade6to10').id)">Class 6 to
+                                        10</a>
+                                    <a class="dropdown-item" href="class_11_12.html" id="grade6to10"
+                                        onclick="changeGrade(document.getElementById('grade6to10').id)">Class 11 to
+                                        12</a>
+                                    <a class="dropdown-item" href="competitive.html">Competitive Exams</a>
+                                    <a class="dropdown-item" href="spoken-english.html">Spoken English</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="teach-with-us.html">TEACH WITH US</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQ'S</a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="news.html">NEWS</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <!-- page title -->
+    <section class="page-title-section custome-overlay" data-background="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/banners/about_us_banner_1.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 align-left-custom">
+                    <h2 class="text-white">News</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /page title -->
+
+    <section class="section-sm-25 bg-cover">
+        <div class="container">
+            <div class="row" id="new-row">
+
+                <!-- <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="https://m.economictimes.com/magazines/panache/education-a-right-no-more-a-privilege-zee5-partners-with-startup-eduauraa-to-make-learning-affordable/articleshow/73974848.cms"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">06 FEBRUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://img.etimg.com/photo/56870528.cms" class="news-logo"
+                                        alt="economics-times">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="https://m.economictimes.com/magazines/panache/education-a-right-no-more-a-privilege-zee5-partners-with-startup-eduauraa-to-make-learning-affordable/articleshow/73974848.cms"
+                                            target="_blank" rel="noopener noreferrer">Education a right, no more a privilege: ZEE5 partners with startup Eduauraa to make learning affordable</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="http://bweducation.businessworld.in/article/ZEE5-Eduauraa-Partner-To-Provide-Online-Education-At-An-Affordable-Price/31-01-2020-183147/"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">01 FEBRUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://static.businessworld.in/static_ed/images/bwedulogo.png" class="news-logo"
+                                        alt="businessworld">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="http://bweducation.businessworld.in/article/ZEE5-Eduauraa-Partner-To-Provide-Online-Education-At-An-Affordable-Price/31-01-2020-183147/"
+                                            target="_blank" rel="noopener noreferrer">ZEE5, Eduauraa Partner To Provide Online Education At An Affordable Price</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="https://indiaeducationdiary.in/zee5-partners-with-eduauraa-to-provide-world-class-online-education-at-an-affordable-price/"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">29 JANUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/news/india-education-diary.png" class="news-logo"
+                                        alt="inida-education-diary">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="https://indiaeducationdiary.in/zee5-partners-with-eduauraa-to-provide-world-class-online-education-at-an-affordable-price/"
+                                            target="_blank" rel="noopener noreferrer">Zee5 partners with Eduauraa to
+                                            provide world class online Eduauraa at an affordable price</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="https://newstrack.com/business/zee5-tied-up-with-eduauraa-for-online-education-programs-509902.html"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">29 JANUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://newstrack.com/wp-content/uploads/2020/01/newstrack_logo.png"
+                                        class="news-logo" alt="news-track">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="https://newstrack.com/business/zee5-tied-up-with-eduauraa-for-online-education-programs-509902.html"
+                                            target="_blank" rel="noopener noreferrer">Zee5 partners Eduauraa to offer
+                                            educational content</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="https://www.thehindubusinessline.com/info-tech/zee5-ties-up-with-ed-tech-platform-eduauraa/article30676739.ece"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100 ">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">29 JANUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://www.thehindubusinessline.com/static/theme/default/base/img/bllogo.png"
+                                        class="news-logo" alt="hindu-bussiness-line">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="https://www.thehindubusinessline.com/info-tech/zee5-ties-up-with-ed-tech-platform-eduauraa/article30676739.ece"
+                                            target="_blank" rel="noopener noreferrer">ZEE5 ties up with ed-tech platform
+                                            Eduauraa</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="https://news.franchiseindia.com/education/zee5-partners-with-eduauraa-to-offer-world-class-online-education.n19378#.XjExImeozuA.whatsapp"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">29 JANUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://www.franchiseindia.com/images/education-logo-black.svg"
+                                        class="news-logo" alt="franchise-india">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="https://news.franchiseindia.com/education/zee5-partners-with-eduauraa-to-offer-world-class-online-education.n19378#.XjExImeozuA.whatsapp"
+                                            target="_blank" rel="noopener noreferrer">Zee5 Partners With Eduauraa To
+                                            Offer
+                                            World Class Online Education</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="https://bestmediainfo.com/2020/01/zee5-partners-with-eduauraa-to-provide-quality-online-education-at-an-affordable-price/"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">29 JANUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://bestmediainfo.com/img/bmi_logo.jpg" class="news-logo"
+                                        alt="best-media-info">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="https://bestmediainfo.com/2020/01/zee5-partners-with-eduauraa-to-provide-quality-online-education-at-an-affordable-price/"
+                                            target="_blank" rel="noopener noreferrer">Zee5 partners with Eduauraa to
+                                            provide
+                                            quality online education at an affordable price</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="https://www.indiantelevision.com/iworld/over-the-top-services/zee5-partners-with-eduauraa-to-provide-world-class-online-education-at-an-affordable-price-200129"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">29 JANUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/news/itv-logo.png" class="news-logo" alt="india-telivision">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="https://www.indiantelevision.com/iworld/over-the-top-services/zee5-partners-with-eduauraa-to-provide-world-class-online-education-at-an-affordable-price-200129"
+                                            target="_blank" rel="noopener noreferrer">ZEE5 partners with Eduauraa to
+                                            provide
+                                            world class online education at an affordable price</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="https://yourstory.com/2020/01/zee5-offer-educational-content-partnership-eduauraa"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">29 JANUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://yourstory.com/logos/logo_yourstory.svg" class="news-logo"
+                                        alt="your-story">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="https://yourstory.com/2020/01/zee5-offer-educational-content-partnership-eduauraa"
+                                            target="_blank" rel="noopener noreferrer">Zee5 to offer educational content
+                                            through partnership with edtech startup Eduauraa</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="https://www.outlookindia.com/newsscroll/zee5-partners-eduauraa-to-offer-educational-content/1720163"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">28 JANUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://www.outlookindia.com/pwa_files/images/logo.png" class="news-logo"
+                                        alt="outlook-india">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="https://www.outlookindia.com/newsscroll/zee5-partners-eduauraa-to-offer-educational-content/1720163"
+                                            target="_blank" rel="noopener noreferrer">Zee5 partners Eduauraa to offer
+                                            educational content</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="https://www.televisionpost.com/zee5-partners-with-eduauraa-to-foray-into-educational-content/"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">28 JANUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://www.televisionpost.com/wp-content/uploads/2017/11/teleposttm.jpg"
+                                        class="news-logo" alt="television-post">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="https://www.televisionpost.com/zee5-partners-with-eduauraa-to-foray-into-educational-content/"
+                                            target="_blank" rel="noopener noreferrer">ZEE5 partners with Eduauraa to
+                                            foray
+                                            into educational content</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-20">
+                    <a class="custom-color-black"
+                        href="https://www.business-standard.com/article/pti-stories/zee5-partners-eduauraa-to-offer-educational-content-120012801594_1.html"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text"><small class="text-muted">28 JANUARY 2020</small></p>
+                                <div class="text-center p-20">
+                                    <img src="https://bsmedia-business--standard-com.cdn.ampproject.org/i/s/bsmedia.business-standard.com/_media/bs/wap/images/bs_logo_amp.png"
+                                        class="news-logo" alt="business-standard">
+                                </div>
+                                <div class="learn-bottom-btn">
+                                    <p class="custom-bold text-center"><a class="custom-color-black"
+                                            href="https://www.business-standard.com/article/pti-stories/zee5-partners-eduauraa-to-offer-educational-content-120012801594_1.html"
+                                            target="_blank" rel="noopener noreferrer">Zee5 partners Eduauraa to offer
+                                            educational content</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads -->
+    <section class="section-sm-25 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Start your learning journey</h2>
+                    <h6 class="download-pad">Available on</h6>
+                    <div class="icons-download">
+                        <a href="">
+                            <img src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/512x512.png" alt="App store" width="150px">
+                        </a>
+
+                        <a href="">
+                            <img src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/512x512g.png" alt="google play" width="150px">
+                        </a>
+
+                        <a href="">
+                            <img src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/Available_on_Zee5.jpg" alt="Zee5" width="150px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Downloads -->
+
+    <!-- footer -->
+    <footer>
+        <!-- footer content -->
+        <div class="footer bg-footer section border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                        <!-- logo -->
+                        <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/logo/logo.png"
+                                alt="logo"></a>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">105/106, Dream Square, Dalia Industrial Estate, Andheri West,
+                                Mumbai,
+                                Maharashtra - 400053, India.</li>
+                            <!-- <li class="mb-2">+91 9999 9999</li>
+              <li class="mb-2">+91 9999 9999</li> -->
+                            <li class="mb-2 contact-us"><a href="mailto:contact@eduauraa.com">contact@eduauraa.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- company -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">ABOUT US</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="video-promo.html">The Eduauraa Story</a></li>
+                            <li class="mb-3"><a class="text-color" href="about.html">Pillars of Eduauraa</a></li>
+                            <li class="mb-3"><a class="text-color" href="our-partner.html">Eduauraa * Zee5</a></li>
+                            <li class="mb-3"><a class="text-color" href="managment.html">Management Team</a></li>
+                            <li class="mb-3"><a class="text-color" href="teacher.html">Teachers</a></li>
+                        </ul>
+                    </div>
+                    <!-- links -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">COURSES</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="class_6_10.html">Class 6 to 10</a></li>
+                            <li class="mb-3"><a class="text-color" href="class_11_12.html">Class 11 to 12</a></li>
+                            <li class="mb-3"><a class="text-color" href="competitive.html">Competitive Exams</a></li>
+                            <li class="mb-3"><a class="text-color" href="spoken-english.html">Spoken English</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">SUPPORT</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" onclick="redirectLogin();">Login</a></li>
+                            <li class="mb-3"><a class="text-color" href="contact.html">Contact Us</a></li>
+                            <li class="mb-3"><a class="text-color" href="career.html">Career</a></li>
+                            <li class="mb-3"><a class="text-color" href="faq.html">FAQ's</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">BE A MENTOR</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="teach-with-us.html">Teach With Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright py-4 bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 text-sm-left text-center">
+                        <p class="contact-us">Copyright
+                            <script>
+                                var CurrentYear = new Date().getFullYear()
+                                document.write(CurrentYear)
+                            </script>
+                            © <a href="https://eduauraa.com">www.eduauraa.com</a> </p>All Rights Reserved. <a
+                            class="contact-us" href="disclaimer.html">Disclaimer</a> | <a class="contact-us"
+                            href="privacy-policy.html">Privacy
+                            Policy</a> | Terms & Conditions
+                    </div>
+                    <div class="col-sm-5 text-sm-right text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="d-inline-block p-2"
+                                    href="https://www.facebook.com/eduauraatech/"><i
+                                        class="ti-facebook text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2"
+                                    href="https://twitter.com/EduauraaTech"><i
+                                        class="ti-twitter-alt text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2"
+                                    href="https://www.instagram.com/eduauraa/"><i
+                                        class="ti-instagram text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2"
+                                    href="https://www.linkedin.com/company/eduauraa-technologies/about/"><i
+                                        class="ti-linkedin text-primary"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src="plugins/aos/aos.js"></script>
+    <!-- venobox popup -->
+    <script src="plugins/venobox/venobox.min.js"></script>
+    <!-- mixitup filter -->
+    <script src="plugins/mixitup/mixitup.min.js"></script>
+    <!-- google map -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+    <script src="js/news.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WF71KZL44"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2WF71KZL44');
+    </script>
+
+</body>
+
+</html>

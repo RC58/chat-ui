@@ -21,11 +21,11 @@ function getFaqData(token) {
             var obj = JSON.parse(response);
             // handle data as needed...
             obj.forEach((setFaq, index) => {
-
+                var faqAnswer = setFaq.answer.replace(/\[BR\]/g, "<br>");
                 var accord = document.getElementById('faq-accordian');
                 var li = document.createElement('li');
                 li.setAttribute('class', 'd-md-table mb-4 w-100 hover-shadow');
-                li.innerHTML = '<button class="accordion" onclick="togglefaq()"><div class="bg-acc-btn" style="padding-top: 3%;"><span class="h4 bg-acc-text">' + (index + 1) + '</span></div><div class="d-md-table-cell px-4 vertical-align-middle mb-4 mb-md-0"><a class="h4 mb-3 d-block mt-4">' + setFaq.question + '</a></div><div class="d-md-table-cell text-right pr-0 pr-md-4 btn-custome"><span class="btn btn-primary">read more</span></div></button><div class="panel"><p>' + setFaq.answer + '</p></div>';
+                li.innerHTML = '<button class="accordion" onclick="togglefaq()"><div class="bg-acc-btn" style="padding-top: 3%;"><span class="h4 bg-acc-text">' + (index + 1) + '</span></div><div class="d-md-table-cell px-4 vertical-align-middle mb-4 mb-md-0 question-text pb-15 pt-30"><a class="h4 d-block mt-0 question-text-inner">' + setFaq.question + '</a></div><div class="d-md-table-cell text-right pr-0 pr-md-4 btn-custome"><span class="btn btn-primary">read more</span></div></button><div class="panel"><p class="justify-content-custom">' + faqAnswer + '</p></div>';
                 accord.appendChild(li);
 
             });
@@ -56,4 +56,3 @@ function togglefaq() {
         }
     }
 }
-

@@ -5,7 +5,7 @@ window.onload = function () {
         localStorage.removeItem('subjectID');
     }
 
-    const course = 'CLASS_6_TO_10';
+    const course = 'CLASS_11_TO_12';
     const token_new = "Bearer XwnpKuAYtfOW0sPKnlbp4UyIpRDVjz";
     // const commonDomain = 'http://13.233.163.224:8000';
     const commonDomain = 'http://13.233.163.224:8000';
@@ -97,7 +97,7 @@ function getGradeData(token, url) {
         closedData();
         closedError();
         showSpinner();
-        request_.open("GET", url + 'ICSE&course=CLASS_6_TO_10', true);
+        request_.open("GET", url + 'CBSE&course=CLASS_11_TO_12', true);
         request_.setRequestHeader("Authorization", token);
         request_.send();
         request_.onreadystatechange = function () {
@@ -133,7 +133,7 @@ function getLanguageData(token, url) {
         closedData();
         closedError();
         showSpinner();
-        var baseLanguageURL = `${url}1/15/language-list/`;
+        var baseLanguageURL = `${url}3/30/language-list/`;
         console.log(baseLanguageURL);
         request_.open("GET", baseLanguageURL, true);
         request_.setRequestHeader("Authorization", token);
@@ -212,7 +212,7 @@ function getSubjectData(token, url) {
 function getChapterData(token, url) {
 
     try {
-        var baseURL = url + "129" + "/chapter-list/";
+        var baseURL = url + "179" + "/chapter-list/";
 
         var request_ = new XMLHttpRequest();
         closedData();
@@ -322,7 +322,7 @@ function changeGradeData(selBoard) {
         closedError();
         showSpinner();
         // var encodedParams = encodeURIComponent(params);
-        request_.open("GET", gradeURL + `${selBoard}` + '&course=CLASS_6_TO_10', true);
+        request_.open("GET", gradeURL + `${selBoard}` + '&course=CLASS_11_TO_12', true);
         request_.setRequestHeader("Authorization", token_new);
         request_.send();
         request_.onreadystatechange = function () {

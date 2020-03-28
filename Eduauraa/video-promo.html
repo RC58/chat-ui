@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Eduauraa: A Premier Digital Learning Platform</title>
+
+    <!-- mobile responsive meta -->
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta name="date" content="2020-01-21" scheme="YYYY-MM-DD">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/manifest.json">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="fixed-top header">
+        <!-- top header -->
+        <!-- navbar -->
+        <div class="navigation w-100">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <a class="navbar-brand" href="index.html"><img src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/logo/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse"
+                        data-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav ml-auto text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+
+                            <li class="nav-item dropdown view active">
+                                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    ABOUT US
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="video-promo.html">The Eduauraa Story</a>
+                                    <a class="dropdown-item" href="about.html">Pillars of Eduauraa</a>
+                                    <a class="dropdown-item" href="our-partner.html">Eduauraa * Zee5</a>
+                                    <a class="dropdown-item" href="managment.html">Management Team</a>
+                                    <a class="dropdown-item" href="teacher.html">Teachers</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown view">
+                                <a class="nav-link dropdown-toggle" href="subjects.html" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    COURSES
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="class_6_10.html" id="grade6to10"
+                                        onclick="changeGrade(document.getElementById('grade6to10').id)">Class 6 to
+                                        10</a>
+                                    <a class="dropdown-item" href="class_11_12.html" id="grade6to10"
+                                        onclick="changeGrade(document.getElementById('grade6to10').id)">Class 11 to
+                                        12</a>
+                                    <a class="dropdown-item" href="competitive.html">Competitive Exams</a>
+                                    <a class="dropdown-item" href="spoken-english.html">Spoken English</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="teach-with-us.html">TEACH WITH US</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQ'S</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">NEWS</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <!-- page title -->
+    <section class="page-title-section-class-video custome-overlay-video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 align-left-custom">
+                    <h2 class="text-white">The Eduauraa Story: With a philosophy of empowering children and playing
+                        catalysts to equal opportunities</h2>
+                    <p class="mb-4 text-white justify-content-custom">Eduauraa was created with a vision to democratize
+                        education by using best technology, making premier quality education to reach every corner of
+                        India at an affordable price.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /page title -->
+
+    <section class="section-download bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="justify-content-custom">Eduauraa wants to be a transformer in the Indian education
+                        landscape. A transformer is an entity who has the ability to make a change in any situation for
+                        a larger purpose, by evolving and transforming its present form or nature, that is larger than
+                        life & unimaginable.</p>
+                    <!-- <p class="text-center">Eduauraa was created with a vision to democratize education by using best technology, making premier quality education to reach every corner of India at an affordable price.</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-sm-25 bg-cover">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3 class="text-center pb-25 custom-bold">Education - The India Story
+                    </h3>
+                    <div class="col-lg-8 col-md-8 col-sm-12"
+                        style="float: none; margin-left: auto; margin-right: auto;">
+                        <div class="">
+
+                            <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto"
+                                width="100%" height="100%" data-setup='{}' poster="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/thumbnail/1.jpg">
+                                <source
+                                    src="https://eduauraamedia.s3.ap-south-1.amazonaws.com/promo/chapter01/playlist.m3u8"
+                                    type="application/x-mpegURL">
+                            </video>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-sm-25 bg-cover">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3 class="text-center pb-25 custom-bold">What is Eduauraa?
+                    </h3>
+                    <div class="col-lg-8 col-md-8 col-sm-12"
+                        style="float: none; margin-left: auto; margin-right: auto;">
+                        <div class="">
+                            <video id="my_video_2" class="video-js vjs-default-skin" controls preload="auto"
+                                width="100%" height="100%" data-setup='{}' poster="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/thumbnail/2.jpg">
+                                <source
+                                    src="https://eduauraamedia.s3.ap-south-1.amazonaws.com/promo/chapter02/playlist.m3u8"
+                                    type="application/x-mpegURL">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-sm-25 bg-cover">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3 class="text-center pb-25 custom-bold">The Eduauraa Approach
+                    </h3>
+                    <div class="col-lg-8 col-md-8 col-sm-12"
+                        style="float: none; margin-left: auto; margin-right: auto;">
+                        <div class="">
+                            <video id="my_video_3" class="video-js vjs-default-skin" controls preload="auto"
+                                width="100%" height="100%" data-setup='{}' poster="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/thumbnail/3.jpg">
+                                <source
+                                    src="https://eduauraamedia.s3.ap-south-1.amazonaws.com/promo/chapter03/playlist.m3u8"
+                                    type="application/x-mpegURL">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-sm-25 bg-cover">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3 class="text-center pb-25 custom-bold">How it works?
+                    </h3>
+                    <div class="col-lg-8 col-md-8 col-sm-12"
+                        style="float: none; margin-left: auto; margin-right: auto;">
+                        <div class="">
+                            <video id="my_video_4" class="video-js vjs-default-skin" controls preload="auto"
+                                width="100%" height="100%" data-setup='{}' poster="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/thumbnail/4.jpg">
+                                <source
+                                    src="https://eduauraamedia.s3.ap-south-1.amazonaws.com/promo/chapter04/playlist.m3u8"
+                                    type="application/x-mpegURL">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-sm-25 bg-cover">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3 class="text-center pb-25 custom-bold">How will it help the Children/Students?
+                    </h3>
+                    <div class="col-lg-8 col-md-8 col-sm-12"
+                        style="float: none; margin-left: auto; margin-right: auto;">
+                        <div class="">
+                            <video id="my_video_5" class="video-js vjs-default-skin" controls preload="auto"
+                                width="100%" height="100%" data-setup='{}' poster="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/thumbnail/5.jpg">
+                                <source
+                                    src="https://eduauraamedia.s3.ap-south-1.amazonaws.com/promo/chapter05/playlist.m3u8"
+                                    type="application/x-mpegURL">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads -->
+    <section class="section-sm-25 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Start your learning journey</h2>
+                    <h6 class="download-pad">Available on</h6>
+                    <div class="icons-download">
+                        <a href="">
+                            <img src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/512x512.png" alt="App store" width="150px">
+                        </a>
+
+                        <a href="">
+                            <img src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/512x512g.png" alt="google play" width="150px">
+                        </a>
+
+                        <a href="">
+                            <img src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/icons/Available_on_Zee5.jpg" alt="Zee5" width="150px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Downloads -->
+
+    <!-- footer -->
+    <footer>
+        <!-- footer content -->
+        <div class="footer bg-footer section border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                        <!-- logo -->
+                        <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/logo/logo.png"
+                                alt="logo"></a>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">105/106, Dream Square, Dalia Industrial Estate, Andheri West,
+                                Mumbai,
+                                Maharashtra - 400053, India.</li>
+                            <!-- <li class="mb-2">+91 9999 9999</li>
+              <li class="mb-2">+91 9999 9999</li> -->
+                            <li class="mb-2 contact-us"><a href="mailto:contact@eduauraa.com">contact@eduauraa.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- company -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">ABOUT US</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="video-promo.html">The Eduauraa Story</a></li>
+                            <li class="mb-3"><a class="text-color" href="about.html">Pillars of Eduauraa</a></li>
+                            <li class="mb-3"><a class="text-color" href="our-partner.html">Eduauraa * Zee5</a></li>
+                            <li class="mb-3"><a class="text-color" href="managment.html">Management Team</a></li>
+                            <li class="mb-3"><a class="text-color" href="teacher.html">Teachers</a></li>
+                        </ul>
+                    </div>
+                    <!-- links -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">COURSES</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="class_6_10.html">Class 6 to 10</a></li>
+                            <li class="mb-3"><a class="text-color" href="class_11_12.html">Class 11 to 12</a></li>
+                            <li class="mb-3"><a class="text-color" href="competitive.html">Competitive Exams</a></li>
+                            <li class="mb-3"><a class="text-color" href="spoken-english.html">Spoken English</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">SUPPORT</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" onclick="redirectLogin();">Login</a></li>
+                            <li class="mb-3"><a class="text-color" href="contact.html">Contact Us</a></li>
+                            <li class="mb-3"><a class="text-color" href="career.html">Career</a></li>
+                            <li class="mb-3"><a class="text-color" href="faq.html">FAQ's</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">BE A MENTOR</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="teach-with-us.html">Teach With Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright py-4 bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 text-sm-left text-center">
+                        <p class="contact-us">Copyright
+                            <script>
+                                var CurrentYear = new Date().getFullYear()
+                                document.write(CurrentYear)
+                            </script>
+                            © <a href="https://eduauraa.com">www.eduauraa.com</a> </p>All Rights Reserved. <a
+                            class="contact-us" href="disclaimer.html">Disclaimer</a> | <a class="contact-us"
+                            href="privacy-policy.html">Privacy
+                            Policy</a> | Terms & Conditions
+                    </div>
+                    <div class="col-sm-5 text-sm-right text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="d-inline-block p-2"
+                                    href="https://www.facebook.com/eduauraatech/"><i
+                                        class="ti-facebook text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2"
+                                    href="https://twitter.com/EduauraaTech"><i
+                                        class="ti-twitter-alt text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2"
+                                    href="https://www.instagram.com/eduauraa/"><i
+                                        class="ti-instagram text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2"
+                                    href="https://www.linkedin.com/company/eduauraa-technologies/about/"><i
+                                        class="ti-linkedin text-primary"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src="plugins/aos/aos.js"></script>
+    <!-- venobox popup -->
+    <script src="plugins/venobox/venobox.min.js"></script>
+    <!-- mixitup filter -->
+    <script src="plugins/mixitup/mixitup.min.js"></script>
+    <!-- google map -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <script src="https://unpkg.com/video.js/dist/video.js"></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+    <script src="js/video-promo.js"></script>
+    <!-- <script>
+        var player = videojs('hls-example');
+        player.play();
+    </script> -->
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WF71KZL44"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2WF71KZL44');
+    </script>
+
+</body>
+
+</html>
