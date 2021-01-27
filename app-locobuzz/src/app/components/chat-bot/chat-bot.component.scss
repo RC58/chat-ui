@@ -1,0 +1,171 @@
+$defaultColor: #a7a7a7;
+$blueColor: #0000ff;
+$whiteColor: #ffffff;
+
+.main-container {
+    position: relative; /* needed for footer positioning*/
+    height: auto !important; /* real browsers */
+    min-height: 100%; /* real browsers */
+}
+
+.inner-wrapper button {
+    background-color: $blueColor;
+    color: $whiteColor;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px 5px 30px 30px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.inner-wrapper button .material-icons {
+    padding: 15px 0px;
+    transform: scale(1.2);
+    transform: rotateY(180deg);
+}
+
+.chat-screen-wrapper {
+    max-width: 500px;
+}
+
+.card-header {
+    padding: 0 !important;
+}
+
+.card-body {
+    min-height: 350px;
+    max-height: 350px;
+    background-color: #e9e9e9;
+    overflow: auto;
+}
+
+ul {
+    display: flex;
+    margin-bottom: 0rem;
+}
+
+ul > li {
+    cursor: pointer;
+    padding: 6px 20px;
+}
+
+ul.sub-list > li {
+    cursor: pointer;
+    padding: 6px 10px;
+}
+
+ul > li.active {
+    transition: 0.3s all ease-out;
+    border-bottom: 2px solid $blueColor;
+    background-color: #cccccc;
+}
+
+.close-btn > span,
+.full-btn > span {
+    cursor: pointer;
+    color: $defaultColor;
+}
+
+.tab-name {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sub-tab-name {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin: 6px 10px;
+}
+
+.sub-tab-name .user-status {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 8px;
+    height: 8px;
+    background-color: #00ff00;
+    border-radius: 50%;
+}
+
+.profile-message-title,
+.chat-send-btn {
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.time, .time-sender {
+    font-size: 11px;
+}
+
+.time-sender {
+    position: absolute;
+    right: 0px;
+    bottom: -12px;
+}
+
+.message-sub-text, .time, .time-sender {
+    color: $defaultColor;
+}
+
+.chat-input {
+    position: relative;
+    padding: 6px 16px 6px 0px;
+}
+
+.chat-input > .material-icons.left,
+.chat-input > .material-icons.right {
+    position: absolute;
+    padding: 8px;
+    pointer-events: none;
+}
+
+.chat-input > .material-icons.left {
+    left: 0px;
+}
+.chat-input > .material-icons.right {
+    right: 16px;
+}
+
+.chat-input > input {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.chat-send-btn > button {
+    min-width: 36px;
+    background-color: $blueColor;
+    padding: 0px;
+}
+
+.reciever-icon,
+.sender-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #090909;
+    margin-right: 10px;
+}
+
+.inner-reciever-message,
+.inner-sender-message {
+    background-color: $whiteColor;
+    padding: 6px 16px;
+    border-radius: 0px 15px 15px 15px;
+    font-size: 12px;
+}
+
+.inner-sender-message {
+    background-color: $blueColor;
+    color: $whiteColor;
+    border-radius: 15px 0 15px 15px;
+}
+
+.sender-wrapper {
+    position: relative;
+    flex-direction: row-reverse;
+}

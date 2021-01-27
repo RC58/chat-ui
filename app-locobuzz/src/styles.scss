@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body {
+    background-color: darkgray;
+    height: 100%;
+}
+
+li > .mat-badge-medium.mat-badge-above .mat-badge-content {
+    top: 6px !important;
+    left: 6px !important;
+}
+
+.mat-badge-medium.mat-badge-above .mat-badge-content {
+    top: -6px !important;
+    left: -6px !important;
+}
+
+.mat-tab-label {
+    min-width: 25px !important;
+    padding: 0 12px !important;
+}
+
+.mat-tab-label-content {
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.mat-tab-label-content > .mat-badge-medium .mat-badge-content {
+    width: 16px !important;
+    height: 16px !important;
+    line-height: 18px !important;
+}
+
+.mat-tab-label-active {
+    background-color: #cccccc;
+}
+
+::ng-deep .mat-tab-header {
+    overflow-x: scroll !important;
+}
+
+::ng-deep .mat-tab-label-container {
+    overflow: visible !important;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: blue;
+}

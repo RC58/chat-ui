@@ -1,0 +1,190 @@
+<div class="main-container">
+    <div class="inner-wrapper" *ngIf="!isChatActive">
+        <button mat-raised-button color="primary" matBadge="8" matBadgePosition="before" matBadgeColor="warn"
+            (click)="toggleChat()">
+            <span class="material-icons">
+                sms
+            </span>
+        </button>
+    </div>
+
+    <div class="chat-screen-wrapper" *ngIf="isChatActive">
+        <div class="row">
+            <div class="card">
+                <div class="card-header bg-white">
+                    <div class="d-flex">
+                        <div class="mr-auto">
+                            <ul class="list-inline">
+                                <li [ngClass]="selectedIndex === 0 ? 'active': ''" (click)="toggleActiveChat(0)"><img
+                                        src="assets/language.svg" alt=""> <span class="tab-name ml-1">Website</span>
+                                    <mat-icon matBadge="2" matBadgeColor="warn"></mat-icon>
+                                </li>
+                                <li [ngClass]="selectedIndex === 1 ? 'active': ''" (click)="toggleActiveChat(1)"><img
+                                        src="assets/whatsapp.svg" alt=""> <span class="tab-name ml-1">WhatsApp</span>
+                                    <mat-icon matBadge="12" matBadgeColor="warn"></mat-icon>
+                                </li>
+                                <li [ngClass]="selectedIndex === 2 ? 'active': ''" (click)="toggleActiveChat(2)"><img
+                                        src="assets/Messanger.svg" alt=""> <span class="tab-name ml-1">Messanger</span>
+                                    <mat-icon matBadge="1" matBadgeColor="warn"></mat-icon>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-2 full-btn">
+                            <span class="material-icons">
+                                check_box_outline_blank
+                            </span>
+                        </div>
+                        <div class="p-2 close-btn">
+                            <span class="material-icons" (click)="toggleChat()">
+                                close
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-header bg-white">
+                    <div class="d-flex">
+                        <mat-tab-group (wheel)="scrollTabs($event)" #tabGroup class="w-100">
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <img src="assets/boy.svg" class="w-100">
+                                </ng-template>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <img src="assets/boy.svg" class="w-100">
+                                </ng-template>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <img src="assets/boy.svg" class="w-100">
+                                </ng-template>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <img src="assets/boy.svg" class="w-100">
+                                    <mat-icon matBadge="2" matBadgeColor="warn"></mat-icon>
+                                </ng-template>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <img src="assets/boy.svg" class="w-100">
+                                </ng-template>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <img src="assets/boy.svg" class="w-100">
+                                </ng-template>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <img src="assets/boy.svg" class="w-100">
+                                </ng-template>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <img src="assets/boy.svg" class="w-100">
+                                </ng-template>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <img src="assets/boy.svg" class="w-100">
+                                </ng-template>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <img src="assets/boy.svg" class="w-100">
+                                </ng-template>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <img src="assets/boy.svg" class="w-100">
+                                </ng-template>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                </div>
+                <div class="card-header bg-white">
+                    <div class="d-flex">
+                        <div class="sub-tab-name">
+                            <div class="user-status"></div>
+                            <img src="assets/boy.svg" class="w-100">
+                        </div>
+                        <div class="profile-message-title">
+                            <span>
+                                <strong>Angelina Gadne</strong> <span class="message-sub-text"> message on </span>
+                                <strong>State Bank of India</strong>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="conatiner">
+                        <div class="reciever-wrapper d-flex pt-2 pb-2">
+                            <div class="reciever-icon">
+                                <img src="assets/boy.svg" class="w-100">
+                            </div>
+                            <div class="reciever-message">
+                                <span class="inner-reciever-message">Hello there!</span>
+                            </div>
+                        </div>
+
+                        <div class="reciever-wrapper d-flex pt-2 pb-2">
+                            <div class="reciever-icon">
+                                <img src="assets/boy.svg" class="w-100">
+                            </div>
+                            <div class="reciever-message">
+                                <span class="inner-reciever-message">I need help regarding online banking</span>
+                            </div>
+                        </div>
+
+                        <div class="reciever-wrapper d-flex pt-2 pb-2">
+                            <div class="reciever-icon">
+                                <img src="assets/boy.svg" class="w-100">
+                            </div>
+                            <div class="reciever-message">
+                                <span class="inner-reciever-message">I was trying to login but it's not working</span>
+                            </div>
+                        </div>
+
+                        <div class="reciever-wrapper d-flex pt-2 pb-2">
+                            <div class="reciever-icon">
+                                <img src="assets/boy.svg" class="w-100">
+                            </div>
+                            <div class="reciever-message">
+                                <span class="inner-reciever-message">Can you help me with it?</span><br/>
+                                <span class="time">10:27 AM</span>
+                            </div>
+                        </div>
+
+                        <div class="sender-wrapper d-flex pt-2 pb-2">
+                            <div class="sender-message">
+                                <span class="inner-sender-message">Sure! Can you help me with your username?</span><br/>
+                                <span class="time-sender">10:27 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-white">
+                    <div class="d-flex">
+                        <div class="chat-input mr-auto w-100">
+                            <span class="material-icons left">
+                                sentiment_satisfied_alt
+                            </span>
+                            <span class="material-icons right">
+                                attach_file
+                            </span>
+                            <input type="text" class="w-100" class="form-control" placeholder="Write your message">
+                        </div>
+                        <div class="chat-send-btn">
+                            <button mat-raised-button color="primary">
+                                <span class="material-icons">
+                                    send
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
